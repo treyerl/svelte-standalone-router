@@ -41,7 +41,7 @@ export default (context, ...middleware) => {
     }
     
     const callback = fns.pop();
-    context.get(url, ...[...middleware, ...fns], decoratorWrapper(callback));
+    context.get(url, [...middleware, ...fns], decoratorWrapper(callback));
     return {
       get: (_url, ...args) => wrappedCall(`${root}/${_url}`, ...args)
     };

@@ -10,8 +10,6 @@ import Navigate from './navigate.svelte';
 import Replace from './replace.svelte';
 import Alter from './alter.svelte';
 
-// svelte component
-export default RouterComponent;
 
 // js implementations
 export { 
@@ -30,6 +28,7 @@ export {
   replace,
   alter,
   // svelte components
+  RouterComponent,
   Redirect,
   Navigate,
   Replace,
